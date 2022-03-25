@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&family=Press+Start+2P&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{ 
+    font-family: 'Poppins';
+    color: black;
+    overflow-x: hidden;
+}
+
+nav{
+    position: absolute;
+    width: 100vw;
+    color: black;
+    background-color: white;
+    border-bottom: 5px solid black;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    transition: 250ms;
+    color: black;
+}
+
+nav ul li:hover{
+    transform: translateY(-3px);
+}
+
+nav ul li{
+    transition: 250ms;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;  
+    text-shadow: 1px 1px 2px black;
+}
+
+.logo{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 100vw;
+    border: 2px solid #f1f1f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
+
+
+#bound-one {
+	background: #d0d8db;
+}
+
+.scroll-bound {
+	height: 10000vh;
+}
+
+.scroll-bound .content{
+    height: 100vh;
+		width: 100%;
+		position: sticky;
+		top:0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+
+.scroll-bound video{
+    width: 100%;
+}
+
+.home{
+    width: 100vw;
+    height: 105vh;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+.home-img{
+    position: absolute;
+    z-index: -1;
+}
+
+#title1{
+    position: relative;
+    top: -15rem;
+    left: -20rem;
+    width: 500px;
+    font-size:  60px;
+}
+
+
+#title2{
+    position: relative;
+    top: 10rem;
+    left: 30rem;
+    width: 500px;
+    font-size:  60px;
+}
+
+
+@keyframes example {
+    0%   {transform: translateY(10px);}
+    75%  {transform: translateY(40px);}
+    100%  {transform: translateY(10px);}
+  }
+
+.arrow{
+    width: 60px;
+    position: relative;
+    top: 17rem;
+    left: 8rem;
+    
+    animation-iteration-count: infinite;
+    animation-name: example;
+    animation-duration: 1.5s;
+}
+
+
