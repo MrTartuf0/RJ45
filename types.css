@@ -9,10 +9,11 @@
 body{
     font-family: 'Poppins';
     background-color: #023e8a;
+    color: white;
+    overflow-x: hidden;
 }
 
 nav{
-    position: absolute;
     width: 100vw;
     color: black;
     background-color: #03045e;
@@ -75,4 +76,64 @@ nav ul li a:hover{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 background: #555;
+}
+
+
+section{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('img/network-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h1{
+    transform: translateY(-2em);
+    font-size: 80px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.cat{
+    width: 50vw;
+    height: 300vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cat h1{
+    padding-top: 10em;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.cat h3{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.cat table thead{
+    background-color: #0077b6;
+    color: white;
+    font-size: 20px;
+}
+
+.cat table{
+    background-color: white;
+    color: black;
+}
+
+
+.cat table td{
+    padding: 8px;
+    border: 1px solid black;
 }
