@@ -103,7 +103,7 @@ section h1{
 
 .cat{
     width: 50vw;
-    height: 300vh;
+    height: 140vh;
     display: flex;
     flex-direction: column;
 }
